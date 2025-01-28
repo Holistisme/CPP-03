@@ -2,14 +2,14 @@
 #                              Author: Alexy Heitz                               #
 #                        File Name: CPP-03/ex00/Makefile                         #
 #                   Creation Date: January 25, 2025 12:49 PM                     #
-#                    Last Updated: January 27, 2025 01:59 PM                     #
+#                    Last Updated: January 27, 2025 16:52 PM                     #
 #                           Source Language: makefile                            #
 #                                                                                #
 #                            --- Code Description ---                            #
 #               Instructions for compiling, cleaning, and more!                  #
 ##################################################################################
 
-NAME		= "Aaaaand... OPEN!"
+NAME		= OPEN!
 
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
@@ -29,7 +29,7 @@ OBJECTS		= $(SOURCE:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	@$(CXX) $(CXXFLAGS) $(OBJECTS) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OBJECTS) -o $(NAME)
 
 %.o: %.cpp
 	@$(CXX) $(CXXFLAGS) -c $< -o $@
