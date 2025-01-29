@@ -1,8 +1,8 @@
 /*********************************************************************************
 *                              Author: Alexy Heitz                               *
-*                File Name: /CPP-03/ex00/utilities/trimSpaces.cpp                *
+*                File Name: /CPP-03/ex01/utilities/trimSpaces.cpp                *
 *                    Creation Date: January 25, 2025 04:00 PM                    *
-*                    Last Updated: January 27, 2025 01:55 PM                     *
+*                    Last Updated: January 29, 2025 12:17 PM                     *
 *                              Source Language: cpp                              *
 *                                                                                *
 *                            --- Code Description ---                            *
@@ -18,7 +18,7 @@
  * 
  * @param string The string to process.
  */
-void	trimSpaces(std::string &string) {
+void trimSpaces(std::string &string) {
 	size_t start = 0;
 	size_t end	 = string.length();
 

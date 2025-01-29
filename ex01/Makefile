@@ -1,3 +1,14 @@
+##################################################################################
+#                              Author: Alexy Heitz                               #
+#                        File Name: CPP-03/ex01/Makefile                         #
+#                   Creation Date: January 25, 2025 12:49 PM                     #
+#                    Last Updated: January 29, 2025 12:17 PM                     #
+#                           Source Language: makefile                            #
+#                                                                                #
+#                            --- Code Description ---                            #
+#               Instructions for compiling, cleaning, and more!                  #
+##################################################################################
+
 NAME		= Serenade
 
 CXX			= c++

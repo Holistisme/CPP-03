@@ -1,8 +1,8 @@
 /*********************************************************************************
 *                              Author: Alexy Heitz                               *
-*               File Name: /CPP-03/ex00/utilities/getInputLine.cpp               *
+*               File Name: /CPP-03/ex01/utilities/getInputLine.cpp               *
 *                    Creation Date: January 25, 2025 04:00 PM                    *
-*                    Last Updated: January 27, 2025 01:53 PM                     *
+*                    Last Updated: January 29, 2025 12:17 PM                     *
 *                              Source Language: cpp                              *
 *                                                                                *
 *                            --- Code Description ---                            *
@@ -21,8 +21,8 @@
  * 
  * @return std::string: The line read.
  */
-std::string	getInputLine(void) {
-	std::string	input;
+std::string getInputLine(void) {
+	std::string input;
 	std::getline(std::cin, input);
 
 	if (std::cin.eof()) {

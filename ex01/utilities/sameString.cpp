@@ -1,8 +1,8 @@
 /*********************************************************************************
 *                              Author: Alexy Heitz                               *
-*                File Name: /CPP-03/ex00/utilities/sameString.cpp                *
+*                File Name: /CPP-03/ex01/utilities/sameString.cpp                *
 *                    Creation Date: January 25, 2025 04:00 PM                    *
-*                    Last Updated: January 27, 2025 01:52 PM                     *
+*                    Last Updated: January 29, 2025 12:17 PM                     *
 *                              Source Language: cpp                              *
 *                                                                                *
 *                            --- Code Description ---                            *
@@ -23,7 +23,7 @@
  * @param second The second string to compare.
  * @return true: If the strings are identical (case-insensitive), false otherwise.
  */
-bool	sameString(const std::string &first, const std::string &second) {
+bool sameString(const std::string &first, const std::string &second) {
 	if (first.length() != second.length())
 		return (false);
 

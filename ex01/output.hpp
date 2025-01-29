@@ -1,8 +1,8 @@
 /*********************************************************************************
 *                              Author: Alexy Heitz                               *
-*                       File Name: /CPP-03/ex00/output.hpp                       *
+*                       File Name: /CPP-03/ex01/output.hpp                       *
 *                    Creation Date: January 25, 2025 04:05 PM                    *
-*                    Last Updated: January 27, 2025 01:58 PM                     *
+*                    Last Updated: January 29, 2025 12:17 PM                     *
 *                              Source Language: cpp                              *
 *                                                                                *
 *                            --- Code Description ---                            *

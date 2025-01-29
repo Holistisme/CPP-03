@@ -1,8 +1,8 @@
 /*********************************************************************************
 *                              Author: Alexy Heitz                               *
-*                 File Name: /CPP-03/ex00/ClapTrap/ClapTrap.hpp                  *
+*                 File Name: /CPP-03/ex01/ClapTrap/ClapTrap.hpp                  *
 *                    Creation Date: January 25, 2025 12:51 PM                    *
-*                    Last Updated: January 27, 2025 12:24 PM                     *
+*                    Last Updated: January 29, 2025 12:17 PM                     *
 *                              Source Language: cpp                              *
 *                                                                                *
 *                            --- Code Description ---                            *
