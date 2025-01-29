@@ -38,5 +38,6 @@ std::string	getInputLine(void) {
 			<< " refuses to carry signals! The field is therefore initiated into the void!" << RESET << std::endl;
 		input = "";
 	}
+	trimSpaces(input);
 	return input;
 }

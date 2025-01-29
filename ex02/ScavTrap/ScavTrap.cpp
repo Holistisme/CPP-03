@@ -1,6 +1,6 @@
 /*********************************************************************************
 *                              Author: Alexy Heitz                               *
-*                  File Name: /CPP-03/ex01/ScavTrap/ScavTrap.cpp                 *
+*                  File Name: /CPP-03/ex02/ScavTrap/ScavTrap.cpp                 *
 *                    Creation Date: January 29, 2025 11:18 AM                    *
 *                    Last Updated: January 29, 2025 12:22 PM                     *
 *                              Source Language: cpp                              *
