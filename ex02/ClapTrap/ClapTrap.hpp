@@ -42,6 +42,7 @@ class ClapTrap {
 
 		bool checkEnergy(void) const;
 	public:
+		ClapTrap(void);
 		ClapTrap(const std::string		   &name, const std::string &color);
 		ClapTrap(const ClapTrap			   &original);
 		ClapTrap &operator=(const ClapTrap &original);

@@ -14,9 +14,14 @@
 
 /********************************************************************************/
 
+FragTrap::FragTrap(void) : ClapTrap(), _highFivesRequest(false) {
+	std::cout << "Call for the constructor of a FragTrap named " << getColoredName() << RESET << " (" << CYAN << this << RESET << ")" << std::endl;
+	setHitPoints(100); setEnergyPoints(100); setAttackDamage(30);
+}
+
 FragTrap::FragTrap(const std::string &name, const std::string &color) : ClapTrap(name, color), _highFivesRequest(false) {
 	std::cout << getColoredName() << RESET << ": \"BOOM! I'm here, and I'm ready to HIGH FIVE EVERYONE!\" (" << CYAN << this << RESET << ")" << std::endl;
-	setHitPoints(100); this->_energyPoints = 100; setAttackDamage(30);
+	setHitPoints(100); setEnergyPoints(100); setAttackDamage(30);
 }
 
 FragTrap::FragTrap(const FragTrap &original)						  : ClapTrap(original), _highFivesRequest(false) {
@@ -25,6 +30,18 @@ FragTrap::FragTrap(const FragTrap &original)						  : ClapTrap(original), _highF
 
 FragTrap::~FragTrap() {
 	std::cout << getColoredName() << RESET << ": \"NOOO! My high fives... unfinished... Tell them... I was awesome...!\" (" << CYAN << this << RESET << ")" << std::endl;
+}
+
+FragTrap	&FragTrap::operator=(const FragTrap &original) {
+	std::cout << "Call for the assignment operator of a FragTrap named " << getColoredName() << RESET << " (" << CYAN << this << RESET << ")" << std::endl;
+	if (this != &original) {
+		setName(original.getName());
+		setColor(original.getColor());
+		setHitPoints(original.getHitPoints());
+		setEnergyPoints(original.getEnergyPoints());
+		setAttackDamage(original.getAttackDamage());
+	}
+	return *this;
 }
 
 /********************************************************************************/

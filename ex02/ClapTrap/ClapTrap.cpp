@@ -14,6 +14,10 @@
 
 /********************************************************************************/
 
+ClapTrap::ClapTrap(void) :  _name("An unknown ClapTrap"), _color(""), _hitPoints(10), _energyPoints(10), _attackDamage(0) {
+	std::cout << "Call for the constructor of a ClapTrap named " << getColoredName() << RESET << " (" << CYAN << this << RESET << ")" << std::endl;
+}
+
 ClapTrap::ClapTrap(const std::string &name, const std::string &color) : _name(name), _color(color), _hitPoints(10), _energyPoints(10), _attackDamage(0) {
 	std::cout << getColoredName() << RESET << ": \"Look out everybody! Things are about to get awesome!\" (" << CYAN << this << RESET << ")" << std::endl;
 }

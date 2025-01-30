@@ -24,6 +24,7 @@ static void	playWithClapTrap(ClapTrap &clapTrap);
  */
 int	main(void) {
 	try {
+		ClapTrap some;
 		std::cout << "\n🤖 Welcome to " << PROGRAM << RESET << "! 🤖\n" << std::endl;
 		std::srand(std::time(0));
 

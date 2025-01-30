@@ -28,8 +28,10 @@ class FragTrap : public ClapTrap {
 		void _switchHighFivesRequest(void);
 		bool _getHighFivesRequest(void) const;
 	public:
+		FragTrap(void);
 		FragTrap(const std::string &name, const std::string &color);
 		FragTrap(const FragTrap	   &original);
+		FragTrap &operator=(const FragTrap &original);
 		~FragTrap();
 
 		void highFivesGuys(void);

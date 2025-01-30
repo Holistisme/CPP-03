@@ -23,8 +23,10 @@ class ScavTrap : public ClapTrap {
 
 		void _setGateKeeperMode(void);
 	public:
+		ScavTrap(void);
 		ScavTrap(const std::string &name, const std::string &color);
 		ScavTrap(const ScavTrap	   &original);
+		ScavTrap &operator=(const ScavTrap &original);
 		~ScavTrap();
 
 		void attack(const std::string &target);

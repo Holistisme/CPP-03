@@ -14,6 +14,11 @@
 
 /********************************************************************************/
 
+ScavTrap::ScavTrap(void) : ClapTrap(), _gatekeeperMode(false) {
+	setHitPoints(100); setEnergyPoints(50); setAttackDamage(20);
+	std::cout << "Call for the constructor of a ScavTrap named " << getColoredName() << RESET << " (" << CYAN << this << RESET << ")" << std::endl;
+}
+
 ScavTrap::ScavTrap(const std::string &name, const std::string &color) : ClapTrap(name, color), _gatekeeperMode(false) {
 	setHitPoints(100); setEnergyPoints(50); setAttackDamage(20);
 	std::cout << getColoredName() << RESET << ": \"Fortress mode: ONLINE. Nobody gets past me!\" (" << CYAN << this << RESET << ")" << std::endl;
@@ -21,6 +26,18 @@ ScavTrap::ScavTrap(const std::string &name, const std::string &color) : ClapTrap
 
 ScavTrap::ScavTrap(const ScavTrap &original)						  : ClapTrap(original), _gatekeeperMode(false) {
 	std::cout << getColoredName() << RESET << ": \"Copying initiated... Wait, does this mean I have a twin? Oh, this is gonna be good!\" (" << CYAN << this << RESET << ")" << std::endl;
+}
+
+ScavTrap	&ScavTrap::operator=(const ScavTrap &original) {
+	std::cout << "Call for the assignment operator of a ScavTrap named " << getColoredName() << RESET << " (" << CYAN << this << RESET << ")" << std::endl;
+	if (this != &original) {
+		setName(original.getName());
+		setColor(original.getColor());
+		setHitPoints(original.getHitPoints());
+		setEnergyPoints(original.getEnergyPoints());
+		setAttackDamage(original.getAttackDamage());
+	}
+	return *this;
 }
 
 void ScavTrap::attack(const std::string	&target) {

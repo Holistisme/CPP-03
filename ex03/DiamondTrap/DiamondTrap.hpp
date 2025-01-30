@@ -18,8 +18,10 @@ class DiamondTrap : public ScavTrap, public FragTrap {
 	private:
 		std::string	_name;
 	public:
+		DiamondTrap(void);
 		DiamondTrap(const std::string &name, const std::string &color);
 		DiamondTrap(const DiamondTrap &original);
+		DiamondTrap &operator=(const DiamondTrap &original);
 		~DiamondTrap();
 
 		std::string getColoredName(void)  const;
