@@ -2,7 +2,7 @@
 *                              Author: Alexy Heitz                               *
 *                        File Name: /CPP-03/ex03/main.cpp                        *
 *                    Creation Date: January 29, 2025 11:18 AM                    *
-*                    Last Updated: January 29, 2025 18:49 PM                     *
+*                    Last Updated: February 5, 2025 16:46 PM                     *
 *                              Source Language: cpp                              *
 *                                                                                *
 *                            --- Code Description ---                            *
@@ -73,8 +73,18 @@ static void playWithDiamondTrap(DiamondTrap &diamondTrap) {
 			diamondTrap.guardGate();
 		else if (sameString(input, "HIGHFIVES"))
 			diamondTrap.highFivesGuys();
-		else if (sameString(input, "WHOAMI"))
+		else if (sameString(input, "WHOAMI")) {
 			diamondTrap.whoAmI();
+			if (sameString(diamondTrap.getName(), "Rick Astley")) {
+				#ifdef __linux__
+					system("xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ > /dev/null 2>&1");
+				#elif _WIN32
+					system("start https://www.youtube.com/watch?v=dQw4w9WgXcQ > nul 2>&1");
+				#elif __APPLE__
+					system("open https://www.youtube.com/watch?v=dQw4w9WgXcQ > /dev/null 2>&1");
+				#endif
+			}
+		}
 		else
 			continue;
 		std::cout << std::endl;
